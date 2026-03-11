@@ -57,3 +57,22 @@ docker compose exec app php artisan migrate
 ```
 
 ---
+---
+
+### 5. Start queue worker
+
+Run in a separate terminal:
+
+```bash
+docker compose exec app php artisan queue:work
+```
+
+---
+
+### 6. Start Reverb WebSocket server
+
+Run in another terminal:
+
+```bash
+docker compose exec app php artisan reverb:start
+```
